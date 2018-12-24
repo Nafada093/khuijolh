@@ -10,7 +10,8 @@ client.on('message', message =>{
 var Gagnant = client.guilds.get(message.guild.id).roles.find("name", "Gagnant !");
 
 	
-if(message.content.toLocaleLowerCase() == ("secret")){
+if(message.content.toLocaleLowerCase() == ("test")){
+message.delete()
  message.channel.send(`Bravo tu as gagné ! ${message.author} !`);
  message.guild.member(message.author).addRole(Gagnant);
  }
