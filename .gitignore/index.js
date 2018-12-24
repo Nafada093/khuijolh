@@ -6,20 +6,14 @@ var prefix = "/";
 client.login(token)
 
 client.on('message', message =>{
+	
+var TeamPirates = client.guilds.get(message.guild.id).roles.find("name", "Gagnant !");
 
-    var muteRole = client.guilds.get(message.guild.id).roles.find("name", "Gagnant !"); 
-
-	if (message.content.toLocaleLowerCase() === `test`) {
-  
-member.addRole(muteRole).then((member) => {
-        
-    message.channel.send("GG");
-    
-            }).catch(() => {
-        
-                message.channel.send("Bravo tu as gagné !");
-          
-            });
-          }
+	
+if(message.content.toLocaleLowerCase() == ("test")){
+ message.channel.send(`Bravo tu as gagné ! ${message.author} !`);
+ message.guild.member(message.author).addRole(Gagnant);
+ }
+	
 	
 });
