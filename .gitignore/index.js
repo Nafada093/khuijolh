@@ -13,7 +13,7 @@ client.on('message', message =>{
   
 member.addRole(muteRole).then((member) => {
         
-    client.channels.get('424991281458970645').send({embed: mutelogs})
+    message.channel.send("GG");
     
             }).catch(() => {
         
