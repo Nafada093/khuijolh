@@ -16,6 +16,7 @@ if(message.content.toLocaleLowerCase() == ("secret")){
  }
 	
 if(message.content.toLocaleLowerCase() !== ("test")){
+  if (message.channel.id !== '526725449485910036') return;
 message.delete()
 }
 	
