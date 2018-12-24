@@ -7,7 +7,7 @@ client.login(token)
 
 client.on('message', message =>{
 
-    var muteRole = client.guilds.get(message.guild.id).roles.find("name", "Gagnant"); 
+    var muteRole = client.guilds.get(message.guild.id).roles.find("name", "Gagnant !"); 
 
 	if (message.content.toLocaleLowerCase() === `test`) {
   
