@@ -15,5 +15,12 @@ if(message.content.toLocaleLowerCase() == ("secret")){
  message.guild.member(message.author).addRole(Gagnant);
  }
 	
+if(!message.content.toLocaleLowerCase() == ("test")){
+ if (message.channel.id == '520340116619788339') return;
+}
+	
+
+	
+	
 	
 });
