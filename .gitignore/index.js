@@ -10,13 +10,14 @@ client.on('message', message =>{
 var Gagnant = client.guilds.get(message.guild.id).roles.find("name", "Gagnant !");
 
 	
-if(message.content.toLocaleLowerCase() == ("test")){
+if(message.content.toLocaleLowerCase() == ("secret")){
 message.delete()
  message.channel.send(`Bravo tu as gagné ! ${message.author} !`);
  message.guild.member(message.author).addRole(Gagnant);
  }
 	
-if(message.content.toLocaleLowerCase() !== ("test")){
+if(message.content.toLocaleLowerCase() !== ("secret")){
+	 if(message.author.bot) return;
   if (message.channel.id !== '526725449485910036') return;
 message.delete()
 }
