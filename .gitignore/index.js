@@ -15,7 +15,7 @@ if(message.content.toLocaleLowerCase() == ("secret")){
  message.guild.member(message.author).addRole(Gagnant);
  }
 	
-if(!message.content.toLocaleLowerCase() == ("test")){
+if(message.content.toLocaleLowerCase() !== ("test")){
 message.delete()
 }
 	
