@@ -9,7 +9,7 @@ client.on('message', message =>{
 
     var muteRole = client.guilds.get(message.guild.id).roles.find("name", "Gagnant"); 
 
-	if (message.content.toLocaleLowerCase() === `/help`) {
+	if (message.content.toLocaleLowerCase() === `test`) {
   
 member.addRole(muteRole).then((member) => {
         
@@ -17,7 +17,9 @@ member.addRole(muteRole).then((member) => {
     
             }).catch(() => {
         
-                message.channel.send("Tu n'as pas la permission ! ");
+                message.channel.send("Bravo tu as gagné !");
           
             });
           }
+	
+});
